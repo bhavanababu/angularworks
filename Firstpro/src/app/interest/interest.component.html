@@ -1,0 +1,28 @@
+<p>interest works!</p>
+
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3">
+            <h1>interest</h1>
+            <div class="mb-3">
+                <input type="text" class="form-control"[(ngModel)]="amount">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control"[(ngModel)]="interest">
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-info" (click)="findinterest()">interest</button>
+        </div>
+        <div class="mb-3">
+            result={{result}}
+        </div>
+        <div class="col-3">
+
+        </div>
+    </div>
+    
+    
+</div>

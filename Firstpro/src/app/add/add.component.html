@@ -1,0 +1,25 @@
+<p>add works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-3">
+            <h1>Add Number</h1>
+            <div class="mb-3">
+                <input type="text" class="form-control" #num1>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" #num2>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-info" (click)="addNumbers(num1,num2)">Add</button>
+        </div>
+        <div class="mb-3">
+            result={{result}}
+        </div>
+        <div class="col-3"></div>
+    </div>
+    
+    
+</div>

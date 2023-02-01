@@ -1,0 +1,19 @@
+<p>multiplication works!</p>
+<div class="container">
+    <div class="row">
+        <h1>Multiply Numbers</h1>
+        <form action="" [formGroup]="form" (ngSubmit)="multiplyNumbers()">
+            <div>
+                <input class="form-control" type="text" formControlName="num1">
+            </div>
+            <div *ngIf="form.get('num1')?.touched && form.get('num1')?.invalid" class="alert alert-danger">Invalid Number1</div>
+            <div>
+                <input class="form-control" type="text" formControlName="num2">
+                <div *ngIf="form.get('num2')?.touched && form.get('num2')?.invalid" class="alert alert-danger">Invalid Number2</div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-dark">Multiply</button>
+            </div>
+        </form>
+    </div>
+</div>
